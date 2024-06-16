@@ -38,7 +38,7 @@ function App() {
               />
             </div>
             <div className='relative w-full h-2'>
-              <button onClick={swap} className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-4 py-2'>Swap</button>
+              <button onClick={swap} className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-4 py-2 hover:bg-blue-700'>Swap</button>
             </div>
             <div>
               <Box
@@ -51,7 +51,7 @@ function App() {
               />
             </div>
             <div className='w-full p-5 '>
-              <button className=' w-full bg-blue-600 p-4 rounded-lg text-xl text-white'>Convert {from.toUpperCase()} to {to.toUpperCase()}</button>
+              <button className=' w-full bg-blue-600 p-4 rounded-lg text-xl text-white hover:bg-blue-700'>Convert {from.toUpperCase()} to {to.toUpperCase()}</button>
             </div>
           </form>
       </div>
