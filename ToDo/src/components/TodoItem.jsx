@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useToDo } from '../contexts/ToDoContext'
 
 function TodoItem({todo}) {
-    const {todos, toggleComplete, deleteToDo, updateToDo} = useToDo();
+    const {toggleComplete, deleteToDo, updateToDo} = useToDo();
     const [isEditable, setIsEditable] = useState(false);
     const [editMsg, setEditMsg] = useState(todo.todo);
     const inputRef = useRef(null)
@@ -18,6 +18,8 @@ function TodoItem({todo}) {
         setIsEditable((prev)=>!prev)
         updateToDo(todo.id, editMsg)
     }
+
+    //local Storage
     
   return (
     <div className=' w-full'>
